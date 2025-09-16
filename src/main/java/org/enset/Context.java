@@ -1,7 +1,7 @@
 package org.enset;
 
 public class Context {
-    private Strategy strategy;
+    private Strategy strategy = new DefaultStrategyImpl();
     public void effectuerOperation() {
         System.out.println("Opération en cours...");
         strategy.Operation();
